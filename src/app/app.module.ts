@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { TopicsComponent } from './topics/topics.component';
 import { NotesComponent } from './notes/notes.component';
+import { NotebooksComponent } from './notebooks/notebooks.component';
 
 const firebaseConfig = {
   "apiKey": "AIzaSyBR-rZYNPBpBFIgMrQF7flr_lSnKwRytaU",
@@ -28,7 +29,8 @@ const firebaseConfig = {
     HeaderComponent,
     CategoriesComponent,
     TopicsComponent,
-    NotesComponent
+    NotesComponent,
+    NotebooksComponent
   ],
   imports: [
     BrowserModule,
