@@ -7,6 +7,9 @@ import { AngularFireDatabaseModule } from "angularfire2/database";
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { TopicsComponent } from './topics/topics.component';
+import { NotesComponent } from './notes/notes.component';
 
 const firebaseConfig = {
   "apiKey": "AIzaSyBR-rZYNPBpBFIgMrQF7flr_lSnKwRytaU",
@@ -22,7 +25,10 @@ const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    CategoriesComponent,
+    TopicsComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,
