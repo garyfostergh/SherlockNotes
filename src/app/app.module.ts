@@ -2,7 +2,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule } from "angularfire2/auth";
-import { AngularFireDatabaseModule } from "angularfire2/database";
+import { AngularFirestoreModule, AngularFirestore } from "angularfire2/firestore";
 
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
@@ -45,7 +45,7 @@ const routes: Route[] = [
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
-    AngularFireDatabaseModule,
+    AngularFirestoreModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
