@@ -12,6 +12,7 @@ import { TopicsComponent } from "./topics/topics.component";
 import { NotesComponent } from "./notes/notes.component";
 import { NotebooksComponent } from "./notebooks/notebooks.component";
 import { RouterModule, Route } from "@angular/router";
+import { LoginComponent } from './login/login.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBR-rZYNPBpBFIgMrQF7flr_lSnKwRytaU",
@@ -27,6 +28,7 @@ const routes: Route[] = [
   { path: "categories", component: CategoriesComponent },
   { path: "notebooks", component: NotebooksComponent },
   { path: "topics", component: TopicsComponent },
+  { path: 'login', component: LoginComponent },
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "**", redirectTo: "home" }
 ];
@@ -39,7 +41,8 @@ const routes: Route[] = [
     CategoriesComponent,
     TopicsComponent,
     NotesComponent,
-    NotebooksComponent
+    NotebooksComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -51,4 +54,4 @@ const routes: Route[] = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
