@@ -3,8 +3,8 @@ import { Note } from "./note";
 export class Category {
     name: string;
     name_NoCase: string;
-    lastModifiedDate: Date;
-    createdDate: Date;
+    lastModifiedDate: string;
+    createdDate: string;
     key$: string;
     notes: Note[];
 }

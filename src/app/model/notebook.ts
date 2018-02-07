@@ -5,8 +5,11 @@ export class Notebook {
     name: string;
     name_NoCase: string;
     favorite: boolean;
-    lastModifiedDate: Date;
-    createdDate: Date;
+    lastModifiedDate: string;
+    createdDate: string;
+    createdBy: string;
+    createdByUid: string;
+    status: string;
     $key: string;
     users: User[];
     categories: Category[];
