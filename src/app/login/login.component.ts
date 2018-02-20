@@ -15,9 +15,15 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  googleLogin() {
-    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
-    this.rt.navigate(['home']);
+  login(loginType: string) {
+    switch (loginType) {
+      case "google":
+        this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+        this.rt.navigate(['home']);
+        break;
+      case "email":
+        break;
+    }
   }
 
   cancel() {
