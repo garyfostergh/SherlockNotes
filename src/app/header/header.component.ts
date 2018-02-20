@@ -9,7 +9,6 @@ import { Router } from "@angular/router";
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  public loginPress: boolean = false;
 
   constructor(public afAuth: AngularFireAuth, private rt: Router) { }
 
@@ -19,10 +18,8 @@ export class HeaderComponent implements OnInit {
   login() {
     //this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
     this.rt.navigate(['login']);
-    this.loginPress = true;
   }
   logout() {
     this.afAuth.auth.signOut();
-    this.loginPress = false;
   }
 }
